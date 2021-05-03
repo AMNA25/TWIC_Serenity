@@ -1,6 +1,5 @@
 package serenity.twic.hooks;
 
-import components.ProfilePage;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.cucumber.java.Before;
@@ -13,15 +12,15 @@ import tasks.Login;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class TestHooks {
-    private Actor bjorn;
+    private Actor Amna;
 
     @Managed
     protected AppiumDriver<MobileElement> driver;
 
     @Before
-    public void bjornCanUseTheApp(){
+    public void setTheStage(){
         OnStage.setTheStage(new OnlineCast());
-        bjorn = OnStage.theActorCalled("Bjorn");
-        theActorInTheSpotlight().wasAbleTo(Login.usingCredentials());
+        Amna = OnStage.theActorCalled("Amna");
+      //  theActorInTheSpotlight().wasAbleTo(Login.usingCredentials());
     }
 }

@@ -1,11 +1,11 @@
-package serenity.twic.acceptancetests;
+package serenity.twic.testRunner;
 
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions(features = "src/test/resources/features/" , glue = "serenity.twic" , tags = "@currentTest")
+@CucumberOptions(features = "src/test/resources/features/" , glue = "serenity.twic" , tags = "@Login and @Address")
 public class Test {
 
 }
